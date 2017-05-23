@@ -1,0 +1,367 @@
+/*============    ШРИФТЫ    ===========*/
+@font-face {
+    font-family: 'Exo2Bold';
+    src: url('fonts/Exo2Bold.eot');
+    src: url('fonts/Exo2Bold.eot') format('embedded-opentype'),
+         url('fonts/Exo2Bold.woff2') format('woff2'),
+         url('fonts/Exo2Bold.woff') format('woff'),
+         url('fonts/Exo2Bold.ttf') format('truetype'),
+         url('fonts/Exo2Bold.svg#Exo2Bold') format('svg');
+}
+
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url('fonts/OpenSansLight.eot');
+    src: url('fonts/OpenSansLight.eot') format('embedded-opentype'),
+         url('fonts/OpenSansLight.woff2') format('woff2'),
+         url('fonts/OpenSansLight.woff') format('woff'),
+         url('fonts/OpenSansLight.ttf') format('truetype'),
+         url('fonts/OpenSansLight.svg#OpenSansLight') format('svg');
+}
+
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('fonts/OpenSansRegular.eot');
+    src: url('fonts/OpenSansRegular.eot') format('embedded-opentype'),
+         url('fonts/OpenSansRegular.woff2') format('woff2'),
+         url('fonts/OpenSansRegular.woff') format('woff'),
+         url('fonts/OpenSansRegular.ttf') format('truetype'),
+         url('fonts/OpenSansRegular.svg#OpenSansRegular') format('svg');
+}
+
+.bold {
+	font-family: "Exo2Bold";
+}
+
+.light {
+	font-family: "OpenSansLight";
+}
+
+.reg {
+	font-family: "OpenSansRegular";
+}
+/*================    БАЗОВЫЕ НАСТРОЙКИ    ===============*/
+a:hover,
+a:focus,
+a:visited,
+a:active{
+	text-decoration: none;
+}
+/*================    ШАПКА    ===============*/
+header {
+	padding-top: 10px;
+	height: 78px;
+	.phone_and_mail{
+		.bold;
+		font-size: 18px;
+		color: #666666;
+		text-align: right;
+	}
+	nav {
+		padding-bottom: 0px;
+		ul.list-inline a{
+			.bold;
+			display: inline-block;
+			text-transform: uppercase;
+			padding: 20px 30px 23px;
+			font-size: 18px;
+			&:hover {
+				background-color: #dae0dc;
+				color: #525453;
+					-moz-transition: all 0.1s 0.02s ease;
+					 -o-transition: all 0.1s 0.02s ease;
+					 -webkit-transition: all 0.1s 0.02s ease;
+					 color:#222;
+			}
+		}
+		ul.list-inline {
+			margin-bottom: 0;
+		}
+
+	}
+
+	background-color: #aaaba7;
+	a {
+		color: #666666;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+	.logotype {
+		img{
+			height: 50px;
+		}
+	}
+}
+	#top_header{
+	   top: 0px; /*высота шапки в пикселях*/
+	   position: fixed;
+	   z-index: 100;
+	   width: 100%;
+	}
+	
+/*============    ГЛАВНЫЙ ЭКРАН    ===========*/
+section#main {
+	background-color: #dae0dc;
+	.light;
+	color: #2b2c2b;
+	padding-bottom: 100px;
+	padding-top: 60px;
+	.header_main {
+		margin-top: 100px;
+		margin-bottom: 0px;
+		h1 {
+			text-transform: uppercase;
+			font-size: 50px;
+		}
+	}
+	.description_img{
+		margin-top: 120px;
+		img {
+			height: 460px;
+		}
+	}
+	.description_1 h2{
+			font-size: 27px;
+		}
+	.description_2 {
+		margin-left: 10px;
+		h3{
+			font-size: 24px;
+		}
+	}
+	.description_3  h2{
+		font-size: 27px;
+	}	
+}
+/*==================    ОКНА    =================*/
+section#window {
+	padding-top: 50px;
+	background-color: #e9efec;
+	color: #424140;
+	.light;
+	.header_pvc_windows {
+		margin-bottom: 50px;
+		h2{
+			font-size: 40px;
+		}
+	}
+	.image_group{
+		margin-bottom: 25px;
+	}
+
+
+	.description_windows {
+		margin-bottom: 50px;
+		p {
+			font-size: 27px;
+		}
+	}
+}
+/*============================    ПРОФИЛИ    =========================*/
+section#pvc_profiles {
+	padding-top: 50px;
+	background-color: #ffffff;
+	color: #000000;
+	.light;
+	.header_profiles{
+		margin-bottom: 50px;
+		h2 {
+			font-size: 40px;
+		}
+	}
+	h4 {
+		font-size: 25px;
+	}
+	p {
+		font-size: 16px;
+	}
+	.others_profiles{
+		margin-bottom: 50px;
+	}
+}
+/*=================    КРЫШИ    =================*/
+section#roofs {
+	padding-top: 50px;
+	background-color: #95a5a6;
+	color: #f9fffc;
+	.light;
+	.header_roofs{
+		margin-bottom: 50px;
+		h2{
+			font-size: 40px;
+		}
+	}
+	.description_roofs {
+		margin-bottom: 50px;
+		p {
+			font-size: 27px;
+		}
+	}
+	img {
+		margin-bottom: 20px;
+	}
+}
+/*================    ДВЕРИ    ==================*/
+section#doors {
+	padding-top: 50px;
+	background-color: #dadfe1;
+	color: #373839;
+	.light;
+	.header_doors {
+		margin-bottom: 50px;
+		h2 {
+			font-size: 40px;
+		}
+	}
+	.description_doors {
+		p {
+			font-size: 27px;
+		}
+	}
+	.image_doors {
+		margin-top: 50px;
+	}
+	.description_doors{
+		margin-bottom: 50px;
+	}
+}
+section#fences {
+	padding-top: 50px;
+	background-color: #eeeeee;
+	color: #3b3b3b;
+	.light;
+	.header_fences {
+		margin-bottom: 50px;
+		h2 {
+			font-size: 40px;
+		}
+	}
+	.description_fences {
+		margin-bottom: 50px;
+		p {
+			font-size: 27px;
+		}
+	}
+	img {
+		margin-top: 50px;
+	}
+}
+/*=================    ПОРТФОЛИО    =====================*/
+section#our_advantages {
+	padding-top: 50px;
+	background-color: #336e7b;
+	color: #ebebeb;
+	.reg;
+	.header_advantages {
+		margin-bottom: 50px;
+		h2{
+			font-size: 40px;
+		}
+	}
+	h3 {
+		font-size: 35px;
+		text-align: center;
+	}
+
+	
+	.advantages_block {
+		margin-bottom: 30px;
+	}
+}
+/*============    Отзывы    ===========*/
+section#reviews {
+	padding-bottom: 50px;
+	padding-top: 50px;
+	background-color: #ffffff;
+	color: #000000;
+	.light;
+	.header_reviews {
+		margin-bottom: 50px;
+		h2 {
+			font-size: 40px;
+		}
+	}
+	h3 {
+		font-size: 38px;
+		text-align: center;
+	}
+	p {
+		font-size: 22px;
+		text-align: center;
+	}
+}
+/*===================    ПОРТФОЛИО    =================*/
+section#portfolio {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #2c3e50;
+	.header_portfolio {
+		margin-bottom: 50px;
+		h2 {
+			.light;
+			font-size: 40px;
+			color: #ffffff;
+		}
+	}
+}
+/*============    ШРИФТЫ    ===========*/
+footer {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #d2d7d3;
+	.light;
+	color: #080913;
+	.header_contacts {
+		margin-bottom: 50px;
+		h2 {
+			font-size: 40px;
+			.reg;
+		}
+	}
+	.contacts_name {
+		h2 {
+			font-size: 40px;
+			text-transform: uppercase;
+			.reg;
+		}
+	}
+	address {
+		p#address {
+			font-size: 32px;
+			.reg;
+			margin-bottom: 0px;
+		}
+		p#vyazniki {
+			font-size: 20px;
+			margin-left: 5px;
+		}
+	}
+	.phone_footer {
+		p#phone_footer{
+			font-size: 32px;
+			.reg;
+			margin-bottom: 0px;
+		}
+		p#number {
+			font-size: 20px;
+			margin-left: 5px;
+		}
+	}
+	.footer_mail {
+		p#footer_mail {
+			font-size: 32px;
+			.reg;
+			margin-bottom: 0px;
+		}
+		p#mail {
+			margin-left: 5px;
+			font-size: 20px;
+		}
+	}
+
+}
+@import "media.less";
+
+
+
